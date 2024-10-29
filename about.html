@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(0, 21, 51); /* Solid background color */
+            color: #ffffff; /* Text color */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 20px; /* Padding for smaller screens */
+            box-sizing: border-box; /* Include padding in height calculations */
+        }
+        h1 {
+            text-align: center;
+            background-color: rgba(30, 144, 255, 0.8); /* Transparent blue */
+            color: white;
+            padding: 15px; /* Adjusted padding */
+            width: 100%;
+            margin: 0 0 1px 0; /* Margin below the heading */
+            border-radius: 5px; /* Rounded corners */
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            width: 100%; /* Ensure full width */
+        }
+        .card {
+            background-color: rgba(0, 0, 0, 0.8); /* Darker background for better contrast */
+            border-radius: 8px;
+            padding: 30px; /* More padding inside the card */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            width: 100%;
+            max-width: 600px; /* Maximum width for larger screens */
+            text-align: center;
+        }
+        p {
+            font-size: 1.1em; /* Slightly smaller font size for clarity */
+            margin: 10px 0; /* Margin above and below paragraphs */
+        }
+        .back-button {
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .back-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+        .back-button:active {
+            transform: scale(0.95);
+        }
+        @media (max-width: 600px) {
+            .card {
+                padding: 20px; /* Less padding on smaller screens */
+            }
+            h1 {
+                font-size: 1.8em; /* Responsive font size */
+            }
+            p {
+                font-size: 1em; /* Responsive text size */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>About Us</h1>
+    <div class="container">
+        <div class="card">
+            <p><strong>Name:</strong> Paul Christian M. Mandap</p>
+            <p><strong>Role:</strong> Cloud Engineer</p>
+            <p><strong>Specialization:</strong> Database</p>
+            <p><strong>Email:</strong> mpcmandap@tip.edu.ph</p>
+            <button class="back-button" onclick="window.location.href='/'">Back to Home</button>
+        </div>
+    </div>
+</body>
+</html>
